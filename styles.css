@@ -67,6 +67,7 @@ button {
 
 #pokemon-image {
   scale: 2;
+  margin: 15px auto 10px;
 }
 
 th, td {
