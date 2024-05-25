@@ -1,0 +1,101 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #080830;
+  --color2: #fff;
+  --color3: rgb(124, 37, 124);
+  --color4: #000;
+  --size1:  20px;
+}
+
+body {
+  background-color: var(--color1);
+  font-family: verdana, arial, sans-serif;
+  text-align: center;
+}
+
+header img {
+  margin: 30px;
+  margin-top: 45px;
+}
+
+h1 {
+  color: var(--color2);
+  font-size: 40px;
+  margin: 30px;
+  margin-top: 15px;
+}
+
+main {
+  background-color: var(--color2);
+  text-align: center;
+  padding: 10px;
+  width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 0.5px solid var(--color1);
+  box-shadow: 15px 15px 2.5px var(--color2);
+}
+
+label {
+  display: block;
+  color: var(--color4);
+  font-size: var(--size1);
+  margin: 10px;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  font-size: var(--size1);
+}
+
+button {
+  font-size: var(--size1);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--color3);
+  color: var(--color2);
+}
+
+#pokemon-image {
+  scale: 2;
+}
+
+th, td {
+  padding: 10px;
+  border: 3px solid var(--color2);
+  text-align: center;
+  font-size: var(--size1);
+  color: var(--color2);
+  background-color: var(--color3)
+}
+
+#base {
+  width: 400px;
+}
+
+th:not(#base), td:not(#base) {
+  width: 170px;
+}
+
+@media (max-width: 650px) {
+  main {
+    scale: 0.75;
+  }
+  .abdulmelik-logo {
+    scale: 0.75;
+    margin: 0;
+  }
+  h1 {
+    scale: 0.75;
+    margin: 0;
+  }
+}

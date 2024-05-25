@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-eqv="X-UA-Compatible" content="IE-EDGE" />
+    <title>Pokémon Search App</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/> -->
+    <!-- for font awesome- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./fetching.css" />
+  </head>
+  <body>
+    <header>
+      <img class="abdulmelik-logo" src="Abdulmelik-Logo.jpg" alt="Logo of Abdulmelik" width="300px">
+      <h1>Pokémon Search App</h1>
+    </header>
+    <main>
+      <label for="search-input">Search for Pokémon Name or ID:</label>
+      <input id="search-input" type="text" required />
+      <button id="search-button">Search</button>
+      <div id="display-area">
+        <p id="pokemon-name"></p>
+        <p id="pokemon-id"></p>
+        <p id="weight"></p>
+        <p id="height"></p>
+        <img src="" id="pokemon-image" />
+        <div id="types"></div>
+        <table>
+          <thead>
+            <tr>
+              <th id="base">Base</th>
+              <th>Stats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="base">HP:</td>
+              <td id="hp"></td>
+            </tr>
+            <tr>
+              <td id="base">Attack:</td>
+              <td id="attack"></td>
+            </tr>
+            <tr>
+              <td id="base">Defense:</td>
+              <td id="defense"></td>
+            </tr>
+            <tr>
+              <td id="base">Sp. Attack:</td>
+              <td id="special-attack"></td>
+            </tr>
+            <tr>
+              <td id="base">Sp. Defense:</td>
+              <td id="special-defense"></td>
+            </tr>
+            <tr>
+              <td id="base">Speed:</td>
+              <td id="speed"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="fetching.js"></script>
+  </body>
+</html>
